@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEiAkhuR0IwewZUXm4nTuGXfsHJe5fOVYy7-UVs-iyzdILwUuCWvjChueUwblX2ChrnJklHk2929ZO_hDXNA-PcQIOyzk40TBxKR_KK3sPgas0SrYF3ce3b00wZe4NKWgNwBhD01waJiwwIYJQkdQyYvYyPNGoxtAdiIqXik41Zv8Hrna9YnMsMF2MLaJxFb=s1600-rw");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+    color: white;
+}
+
+.text .image {
+    background-image: url("https://img.freepik.com/free-photo/nature-landscape-with-mountains-starry-night-sky_23-2150367319.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717286400&semt=ais_user");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 220px;
+}
+
+.rtext {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rtext p {
+    font-size: 12px;
+    color: white;
+}
+
+.bottom {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url("https://img.freepik.com/free-photo/mountain-landscape-with-wood-plank-table-outdoors-generative-ai_188544-12607.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.b1 p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fDRrJTIwbW91bnRhaW58ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b2 .up h1 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.b2 .up p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("https://t3.ftcdn.net/jpg/03/13/53/94/360_F_313539495_TIfAx53PwhMQopiuu7J1RiY2lVzSWrep.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgBhbsCgxe0OrTaJNCF4vKT_FsT7TE0xnth3HsemFEoqob2mchh2UpZUbKdpqDCSUob0&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b3 .overlay {
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+}
+
+.b3 .overlay p {
+    padding: 2vh;
+}
+
+
+/* media queries */
+@media(max-width:700px) {
+    .rtext {
+        flex-direction: column;
+    }
+    .b3 .overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1 {
+        font-size: 5vh;
+        color: white;
+    }
+
+    .text .image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rtext p {
+        margin-top: 10px;
+        color: white;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .b1 {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .b2 {
+        width: 100%;
+    }
+
+    .b2 .up {
+        min-height: 30vh;
+    }
+
+    .b3 {
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
